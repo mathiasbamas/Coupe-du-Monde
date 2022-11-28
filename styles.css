@@ -1,0 +1,33 @@
+nav img{
+    width: 55px;
+}
+
+nav{
+    display: flex;
+}
+
+li{
+    margin-left: 20%;
+    list-style-type: none;
+}
+ul{
+    display: flex;
+}
+
+#image-par-annee{
+    display:flex;
+    flex-direction: column;
+}
+
+#image-par-annee :nth-child(even){
+    margin-left: 60%;
+}
+#image-par-annee :nth-child(odd){
+    margin-left: 10%;
+}
+
+#image-par-annee img{
+    height: 350px;
+    width: 30%;
+    padding-top: 350px;
+}
