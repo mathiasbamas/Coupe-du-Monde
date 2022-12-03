@@ -16,9 +16,20 @@ ul{
 
 .annee-container{
     display: flex;
-    background-color: red;
     width: 100%;
     height: 60%;
+}
+
+.annee-container:nth-child(even){
+    background-color: red;
+}
+
+.annee-container:nth-child(odd){
+    background-color: green;
+}
+
+.annee-container:nth-child(odd) img{
+    order: 2;
 }
 
 .annee-container img{
