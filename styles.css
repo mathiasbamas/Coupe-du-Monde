@@ -35,10 +35,21 @@ ul{
 
 .annee-container p{
     width: 30%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.3em;
 }
 
 .annee-container img{
     width: 35%;
     height: auto;
-    padding: 5vh;
+    margin: 5vh;
+    border-radius: 15%;
+    border: 6px solid white;
+    opacity: 80%;
+    transition: width 0.5s;
+}
+
+.annee-container img:hover{
+    width: 38%;
 }
