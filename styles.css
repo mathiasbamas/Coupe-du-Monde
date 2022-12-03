@@ -14,20 +14,14 @@ ul{
     display: flex;
 }
 
-#image-par-annee{
-    display:flex;
-    flex-direction: column;
+.annee-container{
+    display: flex;
+    background-color: red;
+    width: 100%;
+    height: 60%;
 }
 
-#image-par-annee :nth-child(even){
-    margin-left: 60%;
-}
-#image-par-annee :nth-child(odd){
-    margin-left: 10%;
-}
-
-#image-par-annee img{
-    height: 350px;
-    width: 30%;
-    padding-top: 350px;
+.annee-container img{
+    width: 40%;
+    height: auto;
 }
