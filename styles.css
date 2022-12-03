@@ -32,7 +32,12 @@ ul{
     order: 2;
 }
 
+.annee-container p{
+    width: 30%;
+}
+
 .annee-container img{
     width: 40%;
     height: auto;
+    padding: 5vh;
 }
