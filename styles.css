@@ -1,15 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 nav img{
     width: 55px;
+    padding: 0, 5%;
+    margin-left: 7%;
+    cursor: pointer;
 }
 
 nav{
+    height: 10vh;
     display: flex;
+    align-items: center;
+    background-color: #0B132B;
 }
 
-li{
-    margin-left: 20%;
+ul {
+    width: 90%;
+    justify-content:space-evenly;
+    list-style-type: none;
+    margin: auto auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+li {
+    cursor: pointer;
+    border: solid white 2px;
+    padding: 10px 30px;
+    float: left;
+    position: relative;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+ul li::after{
+  content: "";
+  position:absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: width 0.3s;
+}
+
+li:hover:after{
+    width: 100%;
+}
+
+li a{
+    display: block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
     list-style-type: none;
 }
+
+li a:hover {
+    background-color: #111;
+}
+
 ul{
     display: flex;
 }
@@ -17,39 +73,81 @@ ul{
 .annee-container{
     display: flex;
     width: 100%;
-    height: 60%;
+    height: 70vh;
     justify-content: space-evenly;
+    position: relative;
+    align-items: center;
 }
 
 .annee-container:nth-child(even){
-    background-color: red;
+    background-image: url(https://img.freepik.com/vecteurs-premium/coupe-du-monde-football-contexte-pour-banniere-championnat-football-2022-au-qatar_29865-3055.jpg);
 }
 
 .annee-container:nth-child(odd){
-    background-color: green;
+    background-image: url(https://thumbs.dreamstime.com/b/papier-peint-du-football-de-coupe-monde-102245519.jpg);
 }
 
-.annee-container:nth-child(odd) img{
+.annee-container:nth-child(even) img{
     order: 2;
 }
 
+
 .annee-container p{
+    color: white;
+    font-weight: bolder;
+    padding: 3%; 
     width: 30%;
+    font-family: 'Oxygen';
     text-align: center;
-    margin: auto;
     font-size: 1.3em;
+    z-index: 1;
+    transition: all 0.3 ease-in-out;
+    animation: animate 0.5s linear forwards;
 }
 
-.annee-container img{
-    width: 35%;
-    height: auto;
+@keyframes animate {
+    0% {
+        margin-top: 5%;
+        filter: blur(3px);
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0%;
+        filter: none;
+        opacity: 1;
+    }
+}
+
+.annee-container .highlight-image{
+    cursor: pointer;
+    width: 40%;
+    height: 65%;
     margin: 5vh;
     border-radius: 15%;
     border: 6px solid white;
-    opacity: 80%;
-    transition: width 0.5s;
+    opacity: 90%;
+    transition: transform 0.3s;
+    z-index: 1;
+    flex-wrap: wrap;
+
 }
 
-.annee-container img:hover{
-    width: 38%;
+.annee-container .highlight-image:hover{
+    transform: scale(0.9);
+}
+
+.annee-container .background-flag{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    object-fit: none;
+}
+
+.highlight-image:hover ~ .background-flag{
+    opacity: 100%;
 }
