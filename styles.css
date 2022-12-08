@@ -121,7 +121,7 @@ ul{
 .annee-container .highlight-image{
     cursor: pointer;
     width: 40%;
-    height: 65%;
+    height: auto;
     margin: 5vh;
     border-radius: 15%;
     border: 6px solid white;
@@ -129,6 +129,7 @@ ul{
     transition: transform 0.3s;
     z-index: 1;
     flex-wrap: wrap;
+    object-fit: contain;
 
 }
 
@@ -151,3 +152,21 @@ ul{
 .highlight-image:hover ~ .background-flag{
     opacity: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+    .annee-container{
+        flex-direction: column;
+        height: 60wh;
+    }
+
+    .annee-container p{
+        font-size: 1em;
+        width: 80vw;
+    }
+
+    .annee-container .highlight-image{
+        width: 65vw;
+        margin: 0;
+    }
+
+  }
