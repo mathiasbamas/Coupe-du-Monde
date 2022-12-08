@@ -140,7 +140,7 @@ ul{
 .annee-container .background-flag{
     position: absolute;
     z-index: 0;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     height: 100%;
     right: 0;
@@ -168,5 +168,15 @@ ul{
         width: 65vw;
         margin: 0;
     }
+
+    .annee-container:nth-child(even) .highlight-image{
+        order: 0;
+    }
+
+    .annee-container:nth-child(odd) .highlight-image{
+        order: 0;
+    }
+
+   
 
   }
