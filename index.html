@@ -4,54 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'histoire de la coupe du monde depuis 1998</title>
 </head>
-<nav>
-    <img src="logo.png" alt="logo" href="acceuil.html">
+<nav id="navbar" class="menu-close">
+    <img src="logo.png" alt="logo" href="index.html">
+    <h1>WORLD CUP REWIND</h1>
     <ul>
-        <li><a href="accueil.html">Acceuil</a></li>
+        <li><a href="index.html">Acceuil</a></li>
         <li><a href="stats.html">Statistiques</a></li>
         <li><a href="equipes.html">Equipes</a></li>
-        <li><a href="form.html">Formulaire</a></li>
+        <li><a href="formulaire.html">Formulaire</a></li>
       </ul>
+      <div id="menu-hamburger" onclick="afficheMenuDeroulant()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </nav>
-<section id="liste-annee">
-    <section class="annee-container">
-        <img src="https://i.ytimg.com/vi/3jDB2HJeq1s/maxresdefault.jpg" alt="gagnants 1998" class="highlight-image">
-        <img src="https://images6.alphacoders.com/391/391276.jpg" class="background-flag"> 
-        <p>La Coupe du monde de football 1998 est la seizième édition de la Coupe du monde de football et se déroule en France du 10 juin au 12 juillet 1998. C'est la seconde fois que la France organise la Coupe du monde après 1938. Il s'agit du premier Mondial à réunir trente-deux équipes en phase finale.</p>
+<body>
+    <section id="liste-annee">
+        <section class="annee-container">
+            <img src="https://i.ytimg.com/vi/3jDB2HJeq1s/maxresdefault.jpg" alt="gagnants 1998" class="highlight-image">
+            <img src="https://images6.alphacoders.com/391/391276.jpg" class="background-flag"> 
+            <p>La Coupe du Monde 1998 a eu lieu en France et a été remportée par les Équipes nationales de football de la France qui ont battu le Brésil en finale par 3 buts à 0. Cette coupe du monde a été marquée par des performances exceptionnelles de nombreux joueurs, notamment de Zinedine Zidane qui a été élu meilleur joueur de la compétition.</p>
+        </section>
+        <section class="annee-container">
+            <img src="https://cdn.resfu.com/media/img_news/goal_ronaldo-cropped_1jm2feotxjjx41uxa4pnnu68q1.jpg?size=1000x&lossy=1" alt="" class="highlight-image">
+            <img src="https://www.mylittlebrasil.com.br/wp-content/uploads/2016/05/le-drapeau-bresilien-un-symbole-national-du-bresil.jpg" class="background-flag"> 
+            <p>La Coupe du monde de football 2002 a eu lieu en Corée du Sud et au Japon du 31 mai au 30 juin 2002. Cette édition de la Coupe du monde était la première à être organisée conjointement par deux pays. La finale a vu l'équipe du Brésil battre l'Allemagne par 2 buts à 0. Le Brésilien Ronaldo a été élu joueur de la finale et a remporté le titre de meilleur buteur de la compétition avec 8 buts. </p>
+        </section>
+        <section class="annee-container">
+            <img src="https://www.leparisien.fr/resizer/e_vyePfyNWuJgKhT4O3faR4RyqU=/932x582/arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/VN22ZPB5VRBF6IZ2Z7L2IKCQCY.jpg" alt="" class="highlight-image">
+            <img src="https://images4.alphacoders.com/676/thumb-1920-67606.jpg" class="background-flag"> 
+            <p>La Coupe du monde de football 2006 a eu lieu en Allemagne du 9 juin au 9 juillet 2006. Elle a été remportée par l'Italie, qui a battu la France en finale sur le score de 5-3 aux tirs au but. Cette édition de la coupe du monde a été marquée par de nombreux buts spectaculaires et des matchs disputés. Le Brésil, l'Argentine et l'Allemagne ont été éliminés en phase de groupes, tandis que l'Espagne et les Pays-Bas ont atteint les quarts de finale.</p>
+        </section>
+        <section class="annee-container">
+            <img src="https://media2.ledevoir.com/images_galerie/nwd_70015_64357/entoure-de-ses-coequipiers-andres-iniesta-celebre-la-victoire-de-l-espagne-en-tenant-le-trophee-de-la-coupe-du-monde.jpg" alt="" class="highlight-image">
+            <img src="https://images3.alphacoders.com/788/thumb-1920-78855.jpg" class="background-flag"> 
+            <p>La Coupe du Monde 2010 a eu lieu en Afrique du Sud du 11 juin au 11 juillet 2010. Cette édition a été remportée par l'Espagne, qui a battu les Pays-Bas en finale. C'était la première fois qu'une Coupe du Monde se déroulait en Afrique. Cette édition a également été marquée par la performance de l'équipe de Nouvelle-Zélande, qui a réussi à se qualifier pour les huitièmes de finale pour la première fois de son histoire.</p>
+        </section>
+        <section class="annee-container">
+            <img src="https://i.ytimg.com/vi/zwpl5n1DOsc/maxresdefault.jpg" alt="" class="highlight-image">
+            <img src="https://mobimg.b-cdn.net/v3/fetch/8b/8bf63275d3fc855642cd10830432d823.jpeg" class="background-flag"> 
+            <p>La Coupe du Monde 2014 s'est déroulée au Brésil du 12 juin au 13 juillet 2014. L'Allemagne a remporté la coupe en battant l'Argentine en finale par un score de 1-0. Cependant, l'un des matchs les plus mémorables de cette coupe a été le quart de finale entre l'Allemagne et le Brésil, qui s'est soldé par une victoire écrasante de l'Allemagne par un score de 7-1. </p>
+        </section>
+        <section class="annee-container">
+            <img src="https://i.la-croix.com/1400x933/smart/2022/05/21/1201216252/Kylian-Mbappe-embrasse-Coupe-mondela-victoire-lequipe-France-finale-contre-Croatie-2018-Moscou_0.jpg" alt="" class="highlight-image">
+            <img src="https://images6.alphacoders.com/391/391276.jpg" class="background-flag"> 
+            <p>La Coupe du Monde de football 2018 a eu lieu en Russie du 14 juin au 15 juillet 2018. La France a remporté le tournoi en battant la Croatie 4-2 en finale. C'était la première fois que la France remportait la Coupe du Monde depuis 1998. Le buteur vedette de la France, Kylian Mbappé, a été élu meilleur jeune joueur de la compétition. </p>
+        </section>
     </section>
-    <section class="annee-container">
-        <img src="https://cdn.resfu.com/media/img_news/goal_ronaldo-cropped_1jm2feotxjjx41uxa4pnnu68q1.jpg?size=1000x&lossy=1" alt="" class="highlight-image">
-        <img src="https://www.mylittlebrasil.com.br/wp-content/uploads/2016/05/le-drapeau-bresilien-un-symbole-national-du-bresil.jpg" class="background-flag"> 
-        <p>La 17e Coupe du monde de football (nom officiel : 2002 FIFA World Cup Korea/Japan (en anglais) / Coupe du monde de la FIFA 2002 Corée/Japon) s'est déroulée du 31 mai au 30 juin 2002 en Corée du Sud et au Japon. Ce sont les premiers hôtes asiatiques de la compétition. Pour la première fois, la Fédération internationale de football association en avait confié l'organisation à deux pays. L'épreuve a réuni trente-deux équipes, dont trois étaient qualifiées d'office : les deux organisateurs susnommés et le champion du monde en titre (la France).</p>
-    </section>
-    <section class="annee-container">
-        <img src="https://www.leparisien.fr/resizer/e_vyePfyNWuJgKhT4O3faR4RyqU=/932x582/arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/VN22ZPB5VRBF6IZ2Z7L2IKCQCY.jpg" alt="" class="highlight-image">
-        <img src="https://images4.alphacoders.com/676/thumb-1920-67606.jpg" class="background-flag"> 
-        <p>La Coupe du monde de football 2006 est la dix-huitième édition de la Coupe du monde de football et s'est déroulée du 9 juin au 9 juillet 2006 en Allemagne, qui a été choisie en juin 2000 pour l'organiser.
-            De décembre 2003 à novembre 2005, les sélections nationales de 198 pays participent à une phase de qualification, dans le but de désigner les 31 équipes pouvant prendre part au tournoi final en compagnie de l'Allemagne, qualifiée d'office en tant que pays organisateur.</p>
-    </section>
-    <section class="annee-container">
-        <img src="https://media2.ledevoir.com/images_galerie/nwd_70015_64357/entoure-de-ses-coequipiers-andres-iniesta-celebre-la-victoire-de-l-espagne-en-tenant-le-trophee-de-la-coupe-du-monde.jpg" alt="" class="highlight-image">
-        <img src="https://images3.alphacoders.com/788/thumb-1920-78855.jpg" class="background-flag"> 
-        <p>La Coupe du monde de football 2010 est la dix-neuvième édition de la Coupe du monde de football. Elle s’est déroulée du 11 juin au 11 juillet 2010 en Afrique du Sud et est remportée par l’Espagne.
-
-            Il s’agit de la première phase finale de Coupe du monde se disputant sur le sol africain. Le pays organisateur a été choisi en mai 2004. D’août 2007 à novembre 2009, les sélections de 203 pays ou entités politiques participent à une phase de qualification, dans le but de désigner les 31 équipes disputant le tournoi final en compagnie de l’Afrique du Sud, qualifiée d’office en tant que pays organisateur.</p>
-    </section>
-    <section class="annee-container">
-        <img src="https://i.ytimg.com/vi/zwpl5n1DOsc/maxresdefault.jpg" alt="" class="highlight-image">
-        <img src="https://mobimg.b-cdn.net/v3/fetch/8b/8bf63275d3fc855642cd10830432d823.jpeg" class="background-flag"> 
-        <p>La Coupe du monde de football 2014 est la 20e édition de la Coupe du monde de football, compétition organisée par la FIFA et qui réunit les trente-deux meilleures sélections nationales de football. La phase finale a lieu au Brésil du 12 juin au 13 juillet 2014. L'Allemagne remporte le titre en s'imposant en finale contre l'Argentine.
-
-            Avec le pays organisateur, toutes les équipes championnes du monde depuis 1930 (Uruguay, Italie, Allemagne, Angleterre, Argentine, France et Espagne) se sont qualifiées pour cette compétition. Elle est aussi la première compétition internationale à laquelle participe la Bosnie-Herzégovine. Le tirage au sort des huit groupes de quatre équipes du premier tour est effectué le 6 décembre 2013 à Costa do Sauípe.</p>
-    </section>
-    <section class="annee-container">
-        <img src="https://i.la-croix.com/1400x933/smart/2022/05/21/1201216252/Kylian-Mbappe-embrasse-Coupe-mondela-victoire-lequipe-France-finale-contre-Croatie-2018-Moscou_0.jpg" alt="" class="highlight-image">
-        <img src="https://images6.alphacoders.com/391/391276.jpg" class="background-flag"> 
-        <p>La Coupe du monde de football 2018 est la 21e édition de la Coupe du monde de football, une compétition organisée par la FIFA et qui réunit les trente-deux sélections nationales masculines issues de la phase qualificative. Elle se déroule en Russie du 14 juin au 15 juillet 20181 et est remportée par l'équipe de France.</p>
-    </section>
-</section>
 </body>
 </html>

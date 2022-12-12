@@ -6,11 +6,26 @@
     padding: 0;
 }
 
+body{
+    z-index: 0;
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
 nav img{
     width: 55px;
     padding: 0, 5%;
     margin-left: 7%;
     cursor: pointer;
+    animation-delay: 2s;
+    animation: 2s appear;
 }
 
 nav{
@@ -18,6 +33,7 @@ nav{
     display: flex;
     align-items: center;
     background-color: #0B132B;
+    transition: height 1s;
 }
 
 ul {
@@ -31,15 +47,17 @@ ul {
 
 
 li {
-    cursor: pointer;
     border: solid white 2px;
     padding: 10px 30px;
+    margin: 0 3%;
     float: left;
     position: relative;
     font-family: 'Alfa Slab One', cursive;
+    z-index: 1;
 }
 
 ul li::after{
+  pointer-events: none;
   content: "";
   position:absolute;
   top: 0px;
@@ -48,6 +66,7 @@ ul li::after{
   width: 0%;
   background-color: rgba(255, 255, 255, 0.2);
   transition: width 0.3s;
+  z-index: 0;
 }
 
 li:hover:after{
@@ -60,14 +79,21 @@ li a{
     text-align: center;
     text-decoration: none;
     list-style-type: none;
+    z-index: 2;
 }
 
 li a:hover {
     background-color: #111;
 }
 
+ul:nth-child(){
+    background-color: blue;
+}
+
 ul{
     display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
 }
 
 .annee-container{
@@ -118,10 +144,19 @@ ul{
     }
 }
 
+@keyframes menu-open{
+    0%{
+        height: 10vh;
+    }
+    100%{
+        height: 100vh;
+    }
+}
+
 .annee-container .highlight-image{
     cursor: pointer;
-    width: 40%;
-    height: auto;
+    width: auto;
+    height: 65%;
     margin: 5vh;
     border-radius: 15%;
     border: 6px solid white;
@@ -129,8 +164,6 @@ ul{
     transition: transform 0.3s;
     z-index: 1;
     flex-wrap: wrap;
-    object-fit: contain;
-
 }
 
 .annee-container .highlight-image:hover{
@@ -140,7 +173,7 @@ ul{
 .annee-container .background-flag{
     position: absolute;
     z-index: 0;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     height: 100%;
     right: 0;
@@ -153,30 +186,125 @@ ul{
     opacity: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+h1{
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 0.05em;
+    width: 30%;
+    margin-left: 10px;
+}
+
+#menu-hamburger{
+    display: none;
+    position: absolute;
+    right: 7vw;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    justify-self: flex-end;
+}
+
+#menu-hamburger span{
+    margin-top: 10px;
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 4px;
+}
+
+.menu-open{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    z-index: 3;
+}
+
+
+.menu-open img,h1{
+    display: none;
+}
+
+.menu-open ul {
+    flex-direction: column;
+}
+
+.menu-open ul li{
+    margin: 5vh auto 0 auto;
+    padding: 5vh 0;
+    width: 80%;
+    opacity: 100;
+    animation-delay: 2s;
+    animation: 2s appear;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px){
+
     .annee-container{
-        flex-direction: column;
-        height: 60wh;
+        height: 50vh;
     }
 
     .annee-container p{
         font-size: 1em;
-        width: 80vw;
+    }
+
+    ul li{
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 990px){
+
+    #menu-hamburger{
+        display: block;
+    }
+
+    .menu-close ul{
+        display: none;
     }
 
     .annee-container .highlight-image{
-        width: 65vw;
-        margin: 0;
+        width: 70vw;
+        height: auto;
+        margin: 5% 0 0 0;
     }
 
-    .annee-container:nth-child(even) .highlight-image{
-        order: 0;
+    .annee-container{
+        flex-direction: column;
+        height: 70vh;
+    }
+    
+    .annee-container p{
+        width: 85vw;
     }
 
-    .annee-container:nth-child(odd) .highlight-image{
-        order: 0;
+    h1{
+        width: 30%;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px){
+
+    #menu-hamburger{
+        display: block;
     }
 
-   
-
-  }
+    h1{
+        font-size: 0.7em;
+    }
+}
+table, td {
+    border: 1px solid black;
+}
+thead, tfoot {
+    background-color: black;
+    color: white;
+}
