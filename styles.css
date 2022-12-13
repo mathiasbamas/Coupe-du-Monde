@@ -198,7 +198,7 @@ h1{
     display: none;
     position: absolute;
     right: 7vw;
-    top: 20px;
+    top: 25px;
     width: 40px;
     height: 40px;
     justify-self: flex-end;
@@ -220,8 +220,12 @@ h1{
 }
 
 
-.menu-open img,h1{
+.menu-open img, h1{
     display: none;
+} 
+
+.menu-close img, h1{
+    display: block;
 }
 
 .menu-open ul {
@@ -236,8 +240,6 @@ h1{
     animation-delay: 2s;
     animation: 2s appear;
 }
-
-
 
 
 
