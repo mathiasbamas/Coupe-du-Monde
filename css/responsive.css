@@ -1,0 +1,57 @@
+@media (max-width: 1300px){
+
+    .annee-container{
+        height: 50vh;
+    }
+
+    .annee-container p{
+        font-size: 1em;
+    }
+
+    ul li{
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 990px){
+
+    #menu-hamburger{
+        display: block;
+    }
+
+    .menu-close ul{
+        display: none;
+    }
+
+    .annee-container .highlight-image{
+        width: 70vw;
+        height: auto;
+        margin: 5% 0 0 0;
+    }
+
+    .annee-container{
+        flex-direction: column;
+        height: 70vh;
+    }
+    
+    .annee-container p{
+        width: 85vw;
+    }
+
+    h1{
+        width: 30%;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px){
+
+    #menu-hamburger{
+        display: block;
+    }
+
+    h1{
+        font-size: 0.7em;
+    }
+}
+
