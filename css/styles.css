@@ -220,6 +220,9 @@ h1{
     animation: 2s appear;
 }
 
+/* ---------------------------------- CSS PAGE STATS ---------------------------------- */
+
+
 table, td {
     border: 1px solid black;
 }

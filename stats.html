@@ -2,22 +2,30 @@
 <html class="client-nojs" lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Statistiques de la Coupe Du Monde</title>
 </head>
-<nav>
-    <img src="logo.png" alt="logo" href="index.html">
-    <h1>WORLD CUP REWIND</h1>
-    <ul>
-        <li><a href="index.html">Acceuil</a></li>
-        <li><a href="stats.html">Statistiques</a></li>
-        <li><a href="equipes.html">Equipes</a></li>
-        <li><a href="formulaire.html">Formulaire</a></li>
-    </ul>
-</nav>
+    <nav id="navbar" class="menu-close">
+        <img src="img/logo.png" alt="logo" href="index.html">
+        <h1>WORLD CUP REWIND</h1>
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="stats.html">Statistiques</a></li>
+            <li><a href="equipes.html">Equipes</a></li>
+            <li><a href="formulaire.html">Formulaire</a></li>
+        </ul>
+        <div id="menu-hamburger" onclick="afficheMenuDeroulant()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 <body>
-        <table>
+    <main>
+        <table id="NbParticipations">
             <thead>
                 <tr>
                     <th colspan="2">Participations</th>
@@ -86,7 +94,7 @@
                 </tr>
             </tbody>
         </table>
-        <table>
+        <table id="meilleur-buteur">
             <thead>
                 <tr>
                     <th colspan="7">Meilleurs Buteurs</th>
@@ -94,76 +102,85 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>.  1  .</td>
+                    <td>Classement</td>
+                    <td>Pays</td>
+                    <td>Nom</td>
+                    <td>Matchs</td>
+                    <td>Participations</td>
+                    <td>But/Match</td>
+                    <td>Buts</td>
+                </tr>
+                <tr>
+                    <td>1</td>
                     <td>Allemagne</td>
                     <td>Miroslav Klose</td>
-                    <td>16 buts</td>
-                    <td>24 matchs</td>
-                    <td>4 participations</td>
-                    <td>0.67buts/matchs</td>
+                    <td>24</td>
+                    <td>4</td>
+                    <td>0.67</td>
+                    <td>16</td>
                 </tr>
                 <tr>
-                    <td>.  2  .</td>
+                    <td>2</td>
                     <td>Brésil</td>
                     <td>Ronaldo</td>
-                    <td>15 buts</td>
-                    <td>19 matchs</td>
-                    <td>4 participations</td>
-                    <td>0.79buts/matchs</td>
+                    <td>19</td>
+                    <td>4</td>
+                    <td>0.79</td>
+                    <td>15</td>
                 </tr>
                 <tr>
-                    <td>.  3  .</td>
+                    <td>3</td>
                     <td>Allemagne</td>
                     <td>Gerd Muller</td>
-                    <td>14 buts</td>
-                    <td>13 matchs</td>
-                    <td>2 participations</td>
-                    <td>1.08buts/matchs</td>
+                    <td>13</td>
+                    <td>2</td>
+                    <td>1.08</td>
+                    <td>14</td>
                 </tr>
                 <tr>
-                    <td>.  4  .</td>
+                    <td>4</td>
                     <td>France</td>
                     <td>Just Fontaine</td>
-                    <td>13 buts</td>
-                    <td>6 matchs</td>
-                    <td>4 participations</td>
-                    <td>2.17buts/matchs</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2.17</td>
+                    <td>13</td>
                 </tr>
                 <tr>
-                    <td>.  5  .</td>
+                    <td>5</td>
                     <td>Brésil</td>
                     <td>Pelé</td>
-                    <td>12 buts</td>
-                    <td>14 matchs</td>
-                    <td>4 participations</td>
-                    <td>0.86buts/matchs</td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>0.86</td>
+                    <td>12</td>
                 </tr>
                 <tr>
-                    <td>.  6  .</td>
+                    <td>6</td>
                     <td>Hongrie</td>
                     <td>Sándor Kocsis</td>
-                    <td>11 buts</td>
-                    <td>5 matchs</td>
-                    <td>1 participations</td>
-                    <td>2.2buts/matchs</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2.2</td>
+                    <td>11</td>
                 </tr>
                 <tr>
-                    <td>.  6  .</td>
+                    <td>6</td>
                     <td>Allemagne</td>
                     <td>Jürgen Klinsmann</td>
-                    <td>11 buts</td>
-                    <td>17 matchs</td>
-                    <td>3 participations</td>
-                    <td>0.65buts/matchs</td>
+                    <td>17</td>
+                    <td>3</td>
+                    <td>0.65</td>
+                    <td>11</td>
                 </tr>
                 <tr>
-                    <td>.  7  .</td>
+                    <td>7</td>
                     <td>Argentine</td>
                     <td>Lionel Messi</td>
-                    <td>10 buts</td>
-                    <td>24 matchs</td>
-                    <td>4 participations</td>
-                    <td>0.42buts/matchs</td>
+                    <td>24</td>
+                    <td>4</td>
+                    <td>0.42</td>
+                    <td>10</td>
                 </tr>
             </tbody>
         </table>
@@ -176,56 +193,56 @@
         </thead>
         <tbody>
             <tr>
-                <td>.  1  .</td>
+                <td>1</td>
                 <td>Brésil</td>
                 <td>5 finales remportées</td>
                 <td>7 finales jouées</td>
                 <td>1958, 1962, 1970, 1994, 2002</td>
             </tr>
             <tr>
-                <td>.  2  .</td>
+                <td>2</td>
                 <td>Allemagne</td>
                 <td>4 finales remportées</td>
                 <td>8 finales jouées</td>
                 <td>1954, 1974, 1990, 2014</td>
             </tr>
             <tr>
-                <td>.  2  .</td>
+                <td>2</td>
                 <td>Italie</td>
                 <td>4 finales remportées</td>
                 <td>6 finales jouées</td>
                 <td>1934, 1938, 1982, 2006</td>
             </tr>
             <tr>
-                <td>.  3  .</td>
+                <td>3</td>
                 <td>France</td>
                 <td>2 finales remportées</td>
                 <td>3 finales jouées</td>
                 <td>1998, 2018</td>
             </tr>
             <tr>
-                <td>.  3  .</td>
+                <td>3</td>
                 <td>Argentine</td>
                 <td>2 finales remportées</td>
                 <td>5 finales jouées</td>
                 <td>1978, 1986</td>
             </tr>
             <tr>
-                <td>.  3  .</td>
+                <td>3</td>
                 <td>Uruguay</td>
                 <td>2 finales remportées</td>
                 <td>2 finales jouées</td>
                 <td>1930, 1950</td>
             </tr>
             <tr>
-                <td>.  4  .</td>
+                <td>4</td>
                 <td>Espagne</td>
                 <td>1 finales remportées</td>
                 <td>1 finales jouées</td>
                 <td>2010</td>
             </tr>
             <tr>
-                <td>.  4  .</td>
+                <td>4</td>
                 <td>Angleterre</td>
                 <td>1 finales remportées</td>
                 <td>1 finales jouées</td>
@@ -233,6 +250,7 @@
             </tr>
         </tbody>
     </table>
+    </main>
 </body>
 <br>
 
