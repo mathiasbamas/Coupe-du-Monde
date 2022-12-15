@@ -6,22 +6,9 @@
     padding: 0;
 }
 
-body{
-    z-index: 0;
-}
-
-@keyframes appear{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 100;
-    }
-}
-
-nav img{
+#logo{
     width: 55px;
-    padding: 0, 5%;
+    margin: 0, 5%;
     margin-left: 7%;
     cursor: pointer;
     animation-delay: 2s;
@@ -29,6 +16,7 @@ nav img{
 }
 
 nav{
+    position: relative;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -152,13 +140,13 @@ ul{
 .annee-container .background-flag{
     position: absolute;
     z-index: 0;
-    width: 100%;
     align-items: center;
     height: 100%;
+    width: 100vw;
     right: 0;
     opacity: 0;
     transition: opacity 1s;
-    object-fit: none;
+    object-fit: cover;
 }
 
 .highlight-image:hover ~ .background-flag{
@@ -177,7 +165,7 @@ h1{
     display: none;
     position: absolute;
     right: 7vw;
-    top: 25px;
+    top: 10%;
     width: 40px;
     height: 40px;
     justify-self: flex-end;
@@ -219,9 +207,6 @@ h1{
     animation-delay: 2s;
     animation: 2s appear;
 }
-
-/* ---------------------------------- CSS PAGE STATS ---------------------------------- */
-
 
 table, td {
     border: 1px solid black;
