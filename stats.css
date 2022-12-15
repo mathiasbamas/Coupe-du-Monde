@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(https://images5.alphacoders.com/128/1288612.jpg);
+    position: relative;
+}
+
+table{
+    border-collapse: collapse;
+    width: 30vw;
+    margin-top: 20vh;
+}
+
+#NbParticipations{
+    width: 20vw;
+    align-self: flex-end;
+    margin-right: 5vw;
+}
+
+#meilleur-buteur{
+    width: 35vw;
+    margin-left: 5vw;
+
+}
+#nbcdm{
+    width: 40vw;
+    align-self:flex-end;
+    margin-right: 5vw;
+    margin-bottom: 2vw;
+}
+table tr{
+    font-family: 'Oxygen';
+    padding: 0 10%;
+    text-align: center;
+}
+
+thead th{
+    color: white;
+    padding: 2vh 0;
+    background-color: #0B132B;
+    font-family: 'Alfa Slab One';
+}
+
+table tr:nth-child(odd){
+    background-color: #B0B2B8;
+}
+
+table tr:nth-child(even){
+    background-color: #FFFFFF;
+}
+
+#meilleur-buteur td:nth-child(7){
+    font-weight: bold;
+}
+
+#logobresil{
+    position: absolute;
+    z-index: 2;
+    width: 12vw;
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+#logoallemagne{
+    position: absolute;
+    z-index: 2;
+    width: 9vw;
+    margin-top: 6vw;
+    margin-left: 20vw;
+}
+#logoitalie{
+    position: absolute;
+    z-index: 2;
+    width: 6vw;
+    margin-top: 6vw;
+    margin-left: 35vw;
+}
+#logoargentine{
+    position: absolute;
+    z-index: 2;
+    width: 7vw;
+    margin-top: 7vw;
+    margin-left: 48vw;
+}
+#logomexique{
+    position: absolute;
+    z-index: 2;
+    width: 7vw;
+    margin-top: 20vw;
+    margin-left: 7.5vw;
+}
+#logofrance{
+    position: absolute;
+    z-index: 2;
+    width: 7vw;
+    margin-top: 18.3vw;
+    margin-left: 20.86vw;
+}
+#logoespagne{
+    position: absolute;
+    z-index: 2;
+    width: 6vw;
+    margin-top: 18.3vw;
+    margin-left: 34.89vw;
+}
+#logoangleterre{
+    position: absolute;
+    z-index: 2;
+    width: 7vw;
+    margin-top: 17.8vw;
+    margin-left: 48vw;
+}
+#klose{
+    position: absolute;
+    z-index: 2;
+    width: 10vw;
+    margin-top: 35vw;
+    margin-left: 52.47vw;
+}
+#r9{
+    position: absolute;
+    z-index: 2;
+    width: 16.47vw;
+    margin-top: 35vw;
+    margin-left: 75.47vw;
+}
+#kyky{
+    position: absolute;
+    z-index: 2;
+    width: 20vw;
+    margin-top: 54.78vw;
+    margin-left: 16.57vw;
+}
