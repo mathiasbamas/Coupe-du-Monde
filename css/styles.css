@@ -86,8 +86,8 @@ ul{
 
 .annee-container{
     display: flex;
-    width: 100%;
-    height: 70vh;
+    width: 100vw;
+    padding: 3% 0;
     justify-content: space-evenly;
     position: relative;
     align-items: center;
@@ -122,8 +122,8 @@ ul{
 
 .annee-container .highlight-image{
     cursor: pointer;
-    width: auto;
-    height: 65%;
+    height: 45vh;
+    width: 40vw;
     margin: 5vh;
     border-radius: 15%;
     border: 6px solid white;
@@ -165,7 +165,6 @@ h1{
     display: none;
     position: absolute;
     right: 7vw;
-    top: 10%;
     width: 40px;
     height: 40px;
     justify-self: flex-end;
@@ -186,12 +185,35 @@ h1{
     z-index: 3;
 }
 
+.menu-open #menu-hamburger{
+    top: 5%;
+    animation: 3s appear;
+}
 
-.menu-open img, h1{
+.menu-open #menu-hamburger span{
+    transition: transform 0.75s  ;
+}
+.menu-open #menu-hamburger span:nth-child(1){
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.menu-open #menu-hamburger span:nth-child(2){
+    display: none;
+}
+
+.menu-open #menu-hamburger span:nth-child(3){
+    position: absolute;
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.menu-open img, .menu-open h1{
     display: none;
 } 
 
-.menu-close img, h1{
+.menu-close img, .menu-close h1{
     display: block;
 }
 

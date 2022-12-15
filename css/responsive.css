@@ -1,9 +1,5 @@
 @media (max-width: 1300px){
 
-    .annee-container{
-        height: 50vh;
-    }
-
     .annee-container p{
         font-size: 1em;
     }
@@ -31,11 +27,11 @@
 
     .annee-container{
         flex-direction: column;
-        height: 70vh;
     }
     
     .annee-container p{
         width: 85vw;
+        order: 2;
     }
 
     h1{
