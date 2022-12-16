@@ -14,9 +14,9 @@ main{
 
 
 .equipe-container{
-    position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
     width: 55vw;
+    height: fit-content;
     margin-top: 10vh;
     flex-direction: column;
     display: none;
@@ -35,6 +35,8 @@ main{
     background-color: #0B132B;
     border-radius: 20px;
     color: white;
+    z-index: 1;
+    margin: auto;
 }
 
 .equipe-container ul{
@@ -52,14 +54,19 @@ main{
     font-size: 1.75em;
 }
 
-.flag{
-    position: absolute;
-    width: 25%;
-    height: auto;
-    top: 4%;
-    right: 7%;
-    align-self: flex-end;
+.equipe-container header{
+    display: flex;
+    padding-top: 5vh;
+    width: 100%;
 }
+
+.equipe-container .flag{
+    height: 10vh;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
 
 
 #equipeFrance{
@@ -83,6 +90,8 @@ main input{
 #previousTeam{
     top: 40%;
     left: 5%;
+    background-color: gray;
+    opacity: 0.2;
 }
 
 #nextTeam{

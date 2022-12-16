@@ -34,11 +34,6 @@
         order: 2;
     }
 
-    h1{
-        width: 30%;
-        font-size: 1em;
-    }
-
     main input{
         height: 50px;
         width: 40vw;
@@ -52,16 +47,10 @@
 
     .equipe-container h1{
         font-size: 2em;
-
     }
 
     .equipe-container ul li{
-        font-size: 1.2rem;
-
-    }
-
-    .equipe-container .flag{
-        width: 30%;
+        font-size: 1.2em;
     }
 }
 
@@ -71,7 +60,17 @@
         display: block;
     }
 
+    .equipe-container header{
+        flex-direction: column;
+    }
 
+    .equipe-container header .flag{
+        margin: 5% auto;
+    }
+
+    .equipe-container ul{
+        margin-top: 5vh;
+    }
 
     .equipe-container ul li{
         font-size: 1em;
@@ -79,25 +78,8 @@
         width: 100%;
     }
 
-    .equipe-container ul{
-        gap: 3vh;
-        margin-left: 0;
-    }
-    
 
-    .equipe-container h1{
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    .equipe-container{
-        text-align: center;
-    }
 
-    .equipe-container .flag{
-        top: 20%;
-        right: 30%;
-        width: 40%;
-    }
 }
 
