@@ -15,8 +15,8 @@ main{
 
 .equipe-container{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 55vw;
     margin-top: 10vh;
     flex-direction: column;
     display: none;
@@ -24,14 +24,21 @@ main{
 }
 
 .equipe-container h1{
-    color: #0B132B;
+    display: inline;
+    width: fit-content;
+    padding: 10px 20px;
+    font-family: 'Alfa Slab One';
+    font-weight: 100;
     margin-left: 10%;
-    margin-top: 3%;
-    font-size: 3.5em;
+    margin-top: 7%;
+    font-size: 3em;
+    background-color: #0B132B;
+    border-radius: 20px;
+    color: white;
 }
 
 .equipe-container ul{
-    margin-top: 7vh;
+    margin-top: 17vh;
     margin-left: 10%;
     display: flex;
     flex-direction: column;
@@ -46,9 +53,11 @@ main{
 }
 
 .flag{
-    width: 20%;
+    position: absolute;
+    width: 25%;
     height: auto;
-    margin-right: 7%;
+    top: 4%;
+    right: 7%;
     align-self: flex-end;
 }
 
@@ -60,7 +69,7 @@ main{
 main input{
     position: absolute;
     border-radius: 25px;
-    width: 10vw;
+    width: 15vw;
     height: 6vh;
     border-width: 0;
     background-color: #c5c73b;
@@ -73,12 +82,12 @@ main input{
 
 #previousTeam{
     top: 40%;
-    left: 10%;
+    left: 5%;
 }
 
 #nextTeam{
     top: 40%;
-    right: 10%;
+    right: 5%;
 }
 
 #previousTeam:hover{

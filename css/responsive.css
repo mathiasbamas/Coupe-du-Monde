@@ -38,6 +38,31 @@
         width: 30%;
         font-size: 1em;
     }
+
+    main input{
+        height: 50px;
+        width: 40vw;
+        position: absolute;
+        margin-top: 40vh;
+    }
+
+    .equipe-container{
+        width: 90vw;
+    }
+
+    .equipe-container h1{
+        font-size: 2em;
+
+    }
+
+    .equipe-container ul li{
+        font-size: 1.2rem;
+
+    }
+
+    .equipe-container .flag{
+        width: 30%;
+    }
 }
 
 @media (max-width: 400px){
@@ -46,8 +71,33 @@
         display: block;
     }
 
-    h1{
-        font-size: 0.7em;
+
+
+    .equipe-container ul li{
+        font-size: 1em;
+        padding: 0;
+        width: 100%;
+    }
+
+    .equipe-container ul{
+        gap: 3vh;
+        margin-left: 0;
+    }
+    
+
+    .equipe-container h1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .equipe-container{
+        text-align: center;
+    }
+
+    .equipe-container .flag{
+        top: 20%;
+        right: 30%;
+        width: 40%;
     }
 }
 
