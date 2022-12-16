@@ -4,6 +4,8 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 #logo{
@@ -24,8 +26,8 @@ nav{
     transition: height 1s;
 }
 
-ul {
-    width: 90%;
+nav ul {
+    width: 70vw;
     justify-content:space-evenly;
     list-style-type: none;
     margin: auto auto;
@@ -34,7 +36,7 @@ ul {
 }
 
 
-li {
+nav li {
     border: solid white 2px;
     padding: 10px 30px;
     margin: 0 3%;
@@ -44,7 +46,7 @@ li {
     z-index: 1;
 }
 
-ul li::after{
+nav ul li::after{
   pointer-events: none;
   content: "";
   position:absolute;
@@ -57,28 +59,26 @@ ul li::after{
   z-index: 0;
 }
 
-li:hover:after{
+nav li:hover:after{
     width: 100%;
 }
 
-li a{
+nav li a{
     display: block;
     color:white;
     text-align: center;
-    text-decoration: none;
-    list-style-type: none;
     z-index: 2;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: #111;
 }
 
-ul:nth-child(){
+nav ul:nth-child(){
     background-color: blue;
 }
 
-ul{
+nav ul{
     display: flex;
     justify-content: flex-end;
     margin-right: 5%;

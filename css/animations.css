@@ -25,6 +25,39 @@
         opacity: 0;
     }
     100%{
-        opacity: 100;
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft{
+    0%{
+        margin-right: 30%;
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-right: 0%;
+    }
+}
+
+@keyframes slideFromRight{
+    0%{
+        margin-left: 30%;
+        opacity: 0;
+        filter: blur(2px);
+    }
+    15%{
+        opacity: 0;
+    }
+    30%{
+        filter: blur(2px);
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0%;
+        filter: none;
     }
 }

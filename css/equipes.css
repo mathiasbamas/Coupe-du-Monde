@@ -1,10 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
-.equipes{
+body{
+    overflow: hidden;
+}
+main{
+    height: 100vh;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.equipe-container{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 1000px;
+    margin-top: 10vh;
+    flex-direction: column;
+    display: none;
+    animation: none;
+}
+
+.equipe-container h1{
+    color: #0B132B;
+    margin-left: 10%;
+    margin-top: 3%;
+    font-size: 3.5em;
+}
+
+.equipe-container ul{
+    margin-top: 7vh;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(https://images5.alphacoders.com/128/1288612.jpg);
+    gap: 30px;
+    padding-bottom: 10vh;
+}
+
+.equipe-container ul li{
+    color: #0B132B;
+    font-family: 'Alfa Slab One';
+    font-size: 1.75em;
+}
+
+.flag{
+    width: 20%;
+    height: auto;
+    margin-right: 7%;
+    align-self: flex-end;
+}
+
+
+#equipeFrance{
+    display: flex;
+}
+
+main input{
+    position: absolute;
+    border-radius: 25px;
+    width: 10vw;
+    height: 6vh;
+    border-width: 0;
+    background-color: #c5c73b;
+    font-family: 'Secular One';
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#previousTeam{
+    top: 40%;
+    left: 10%;
+}
+
+#nextTeam{
+    top: 40%;
+    right: 10%;
+}
+
+#previousTeam:hover{
+    transform: translateX(20px);
+}
+
+#nextTeam:hover{
+    transform: translateX(-20px);
 }

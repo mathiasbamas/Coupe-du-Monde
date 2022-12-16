@@ -1,14 +1,17 @@
-<html class="client-nojs" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/equipes.css">
-    <link rel="stylesheet" href="css/stats.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les equipes de la Coupe Du Monde</title>
 </head>
 <body>
+    
     <nav id="navbar" class="menu-close">
         <img src="img/logo.svg" alt="logo" id="logo">
         <h1>WORLD CUP REWIND</h1>
@@ -24,168 +27,41 @@
             <span></span>
         </div>
     </nav>
-    <section class="equipes">
-    <br><table>
-        <thead>
-            <tr>
-                <th colspan="2">Chapeau 1</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Drapeau</td>
-                <td>Qatar</td>
-            </tr>
-            <tr>
-                <td>Drapeau</td>
-                <td>Brésil</td>
-            </tr>
-            <tr>
-                <td>Drapeau</td>
-                <td>Belgique</td>
-            </tr>
-            <tr>
-                <td>Drapeau</td>
-                <td>France</td>
-            </tr>
-            <tr>
-                <td>Drapeau</td>
-                <td>Argentine</td>
-            </tr>
-            <tr>
-                <td>Drapeau</td>
-                <td>Angleterre</td>
-            </tr>
-            <tr>
-                <td>Drapeau</td>
-                <td>Portugal</td>
-            </tr>
-            <tr>
-                <td>Drapeau</td>
-                <td>Argentine</td>
-            </tr>
-        </tbody>
-        </table><table>
-            <thead>
-                <tr>
-                    <th colspan="2">Chapeau 2</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Drapeau</td>
-                    <td>Mexique</td>
-                </tr>
-                <tr>
-                    <td>Drapeau</td>
-                    <td>Pays-Bas</td>
-                </tr>
-                <tr>
-                    <td>Drapeau</td>
-                    <td>Danemark</td>
-                </tr>
-                <tr>
-                    <td>Drapeau</td>
-                    <td>Allemagne</td>
-                </tr>
-                <tr>
-                    <td>Drapeau</td>
-                    <td>Uruguay</td>
-                </tr>
-                <tr>
-                    <td>Drapeau</td>
-                    <td>Suisse</td>
-                </tr>
-                <tr>
-                    <td>Drapeau</td>
-                    <td>Etats-Unis</td>
-                </tr>
-                <tr>
-                    <td>Drapeau</td>
-                    <td>Croatie</td>
-                </tr>
-            </tbody>
-            </table><br><table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Chapeau 3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Drapeau</td>
-                        <td>Sénégal</td>
-                    </tr>
-                    <tr>
-                        <td>Drapeau</td>
-                        <td>Iran</td>
-                    </tr>
-                    <tr>
-                        <td>Drapeau</td>
-                        <td>Japon</td>
-                    </tr>
-                    <tr>
-                        <td>Drapeau</td>
-                        <td>Maroc</td>
-                    </tr>
-                    <tr>
-                        <td>Drapeau</td>
-                        <td>Serbie</td>
-                    </tr>
-                    <tr>
-                        <td>Drapeau</td>
-                        <td>Pologne</td>
-                    </tr>
-                    <tr>
-                        <td>Drapeau</td>
-                        <td>Corée du Sud</td>
-                    </tr>
-                    <tr>
-                        <td>Drapeau</td>
-                        <td>Tunisie</td>
-                    </tr>
-                </tbody>
-                </table><table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Chapeau 4</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Drapeau</td>
-                            <td>Cameroun</td>
-                        </tr>
-                        <tr>
-                            <td>Drapeau</td>
-                            <td>Canada</td>
-                        </tr>
-                        <tr>
-                            <td>Drapeau</td>
-                            <td>Equateur</td>
-                        </tr>
-                        <tr>
-                            <td>Drapeau</td>
-                            <td>Arabie saoudite</td>
-                        </tr>
-                        <tr>
-                            <td>Drapeau</td>
-                            <td>Ghana</td>
-                        </tr>
-                        <tr>
-                            <td>Drapeau</td>
-                            <td>Australie</td>
-                        </tr>
-                        <tr>
-                            <td>Drapeau</td>
-                            <td>Costa-Rica</td>
-                        </tr>
-                        <tr>
-                            <td>Drapeau</td>
-                            <td>Pays de Galles</td>
-                        </tr>
-                    </tbody>
-            </table>
+
+    <main>
+        <section id="equipeFrance" class="equipe-container">
+            <h1>France</h1>
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/langfr-225px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png" alt="drapeau de la france">
+            <ul>
+                <li>Coupes Gagnees : </li>
+                <li>Total de But</li>
+                <li> Meilleur Buteur</li>
+                <li>Participations</li>
+            </ul>
         </section>
+        <section id="equipeAllemagne" class="equipe-container">
+            <h1>Allemagne</h1>
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/langfr-1920px-Flag_of_Germany.svg.png" alt="drapeau de la france">
+            <ul>
+                <li>Coupes Gagnees : </li>
+                <li>Total de But</li>
+                <li> Meilleur Buteur</li>
+                <li>Participations</li>
+            </ul>
+        </section>
+        <section id="equipeBresil" class="equipe-container">
+            <h1>Bresil</h1>
+            <img class="flag" src="https://www.larousse.fr/encyclopedie/data/images/1009466-Drapeau_du_Br%c3%a9sil.jpg" alt="drapeau de la france">
+            <ul>
+                <li>Coupes Gagnees : </li>
+                <li>Total de But</li>
+                <li> Meilleur Buteur</li>
+                <li>Participations</li>
+            </ul>
+        </section>
+        <input type="button" value="PRECEDENT" id="previousTeam" onclick="previousTeam()">
+        <input type="button" value="SUIVANT" id="nextTeam" onclick="nextTeam()">
+    </main>
+
     </body>
 </html>
