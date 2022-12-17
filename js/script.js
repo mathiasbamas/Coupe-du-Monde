@@ -19,8 +19,11 @@ function nextTeam(){
         ++i
     }
     var x = document.getElementsByClassName("equipe-container")
+    var flag = document.getElementsByClassName("flag");
+    flag[i].style.backgroundPosition = -i*160 + "px 0"
     x[i].style.animation="0.5s slideFromLeft";
     x[i].style.display="flex";
+
 
     if(i === x.length - 1){
         var boutonSuivant = document.getElementById("nextTeam")
@@ -40,6 +43,8 @@ function previousTeam(){
     var x = document.getElementsByClassName("equipe-container")
     x[i].style.animation="0.5s slideFromRight";
     x[i].style.display="flex";
+    var flag = document.getElementsByClassName("flag");
+    flag[i].style.backgroundPosition = -i*160 + "px 0"
     }
 
     if(i === 0){

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
-body{
-    overflow: hidden;
-}
 main{
     height: 100vh;
     background: linear-gradient(to right, #141e30, #243b55);
@@ -24,19 +21,17 @@ main{
 }
 
 .equipe-container h1{
-    display: inline;
     width: fit-content;
+    height: fit-content;
     padding: 10px 20px;
     font-family: 'Alfa Slab One';
     font-weight: 100;
     margin-left: 10%;
-    margin-top: 7%;
     font-size: 3em;
     background-color: #0B132B;
     border-radius: 20px;
     color: white;
     z-index: 1;
-    margin: auto;
 }
 
 .equipe-container ul{
@@ -55,19 +50,19 @@ main{
 }
 
 .equipe-container header{
+    align-items: center;
+    justify-content: space-around;
     display: flex;
     padding-top: 5vh;
     width: 100%;
 }
 
 .equipe-container .flag{
-    height: 10vh;
-    align-self: flex-end;
-    margin-left: auto;
-    margin-right: 10%;
+    height: 100px;
+    width: 160px;
+    background-image: url("../img/SpriteDrapeauPays.png");
+    background-position: 0 0;
 }
-
-
 
 #equipeFrance{
     display: flex;
