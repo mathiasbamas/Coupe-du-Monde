@@ -27,6 +27,7 @@ nav{
 }
 
 nav ul {
+    display: flex;
     width: 70vw;
     justify-content:space-evenly;
     list-style-type: none;
@@ -76,12 +77,6 @@ nav li a:hover {
 
 nav ul:nth-child(){
     background-color: blue;
-}
-
-nav ul{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5%;
 }
 
 .annee-container{
@@ -212,10 +207,6 @@ nav h1{
 .menu-open img, .menu-open h1{
     display: none;
 } 
-
-.menu-close img, .menu-close h1{
-    display: block;
-}
 
 .menu-open ul {
     flex-direction: column;

@@ -56,6 +56,10 @@
 
 @media (max-width: 400px){
 
+    nav h1{
+        display: none;
+    }
+    
     #menu-hamburger{
         display: block;
     }
