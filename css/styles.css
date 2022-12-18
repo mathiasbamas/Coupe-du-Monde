@@ -9,6 +9,7 @@
     list-style-type: none;
 }
 
+
 /* ----------------------- Barre de Navigation ----------------------- */
 
 #logo{
@@ -151,6 +152,9 @@ nav h1{
     animation: 2s appear;
 }
 
+/* ----------------------- Bas de page ----------------------- */
+
+
 #bas-de-page{
     display: flex;
     height: 200px;
@@ -176,6 +180,18 @@ nav h1{
     margin:  0 1vw;
     font-family: 'Secular One';
 }
+
+#remonter{
+    background-color: white;
+    border-radius: 100%;
+    opacity: 0.3;
+    padding: 20%;
+    width: 2vw;
+    min-width: 40px;
+    height: auto;
+}
+
+
 
 
 

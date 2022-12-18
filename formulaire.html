@@ -30,11 +30,11 @@
             <span></span>
         </div>
     </nav> 
-    <main>
+    <form onsubmit="envoyerUnEmail(); return false">
         <h1>Donnez nous votre Avis</h1>
-        <input type="text" placeholder="Nom" id="nom" required>
-        <input type="text" placeholder="Prenom" id="prenom" required>
-        <input type="email" placeholder="Email" id="email" required>
+        <input required type="text" placeholder="Nom" id="nom">
+        <input required type="text" placeholder="Prenom" id="prenom">
+        <input required type="email" placeholder="Email" id="email">
         <textarea name="avis" id="avis" placeholder="Commentaire"></textarea>
         <h2>Quelle était votre équipe favorite ?</h2>
         <section id="listeEquipes">
@@ -50,15 +50,17 @@
             <input type="radio" name="pays" hidden id="pays4">
             <label for="pays4"><img src="img/flag/drapeauMarocIcon.png" alt=""></label>
         </section>
-        <input type="submit" value="Envoyer" id="envoyer" onclick="envoyerUnEmail()">
-        <div id="validation-popup">
-            <p>Envoie Validé</p>
-            <input type="button" value="Fermer" onclick="fermerFenetre()">
-        </div> 
-    </main>
+        <input type="submit" value="Envoyer" id="envoyer">
+    </form>
+
+    <div id="validation-popup">
+        <p>Envoie Validé</p>
+        <input type="button" value="Fermer" onclick="fermerFenetre()">
+    </div> 
 
     <footer id="bas-de-page">
         <p>Site crée par BAMAS Mathias et BIHI Ayoub</p>
+        <a href="#"><img src="img/upLogo.svg" id="remonter"></a>
     </footer>
 </body>
 </html>

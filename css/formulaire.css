@@ -4,9 +4,10 @@
 body{
     background: linear-gradient(to right, #141e30, #243b55);
     min-height: 100vh;
+    position: relative;
 }
 
-main{
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,6 +67,7 @@ main{
 #validation-popup{
     position: absolute;
     top: 30%;
+    left: 40vw;
     min-width: 250px;
     width: 20%;
     height: 20vh;
@@ -96,7 +98,7 @@ main{
     cursor: pointer;
 }
 
-main h1{
+form h1{
     color: white;
     width: 100%;
     padding: 3% 0;
@@ -106,7 +108,7 @@ main h1{
     font-weight: 100;
 }
 
-main h2{
+form h2{
     color: white;
     width: 80%;
     text-align: center;
@@ -119,18 +121,18 @@ main h2{
 }
 
 
-main #listeEquipes label{
+form #listeEquipes label{
     width: 20%;
     height: 90%;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
-main #listeEquipes label img{
+form #listeEquipes label img{
     width: 100%;
 }
 
-main #listeEquipes{
+form #listeEquipes{
     width: 100%;
     margin-top: 5%;
     display: flex;

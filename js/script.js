@@ -67,6 +67,7 @@ function changePage(page){
     }
 }
 
+/* Envoie un mail grace a EmailJs*/ 
 function envoyerUnEmail() {
     var params = {
         name: document.getElementById("nom").value + " " + document.getElementById("prenom"), 
@@ -91,6 +92,7 @@ function fermerFenetre(){
 
 var pageAcceuil = 0;
 
+/* Change les année sur le theme 2 de la page d'acceuil */
 function changePageAcceuil(page){
     var listePage = document.getElementsByClassName("annee-container")
     if(pageAcceuil+page < 0 || pageAcceuil+page > listePage.length-1) return
@@ -108,7 +110,15 @@ function changePageAcceuil(page){
     }
 }
 
+/* Change la feuille css de la page d'acceuil */ 
 function changeAcceuilStyle(nom){
+    var listeContainer = document.getElementsByClassName("annee-container");
+
+    /* Enleve les display none pour que les containeur soit tous visible sur le theme 1 */
+    for(var i=0; i<listeContainer.length; ++i){
+        listeContainer[i].attributeStyleMap.clear()
+    }
+
     document.getElementById('style').setAttribute('href', nom)
 }
 

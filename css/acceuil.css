@@ -51,6 +51,7 @@
     margin: 5vh;
     border-radius: 15%;
     border: 6px solid white;
+    transition: transform 0.3s;
     opacity: 90%;
     z-index: 1;
 }
