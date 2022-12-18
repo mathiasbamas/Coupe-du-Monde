@@ -59,6 +59,51 @@
     .equipe-container ul li{
         font-size: 1.2em;
     }
+
+    .stats-container{
+        flex-direction: column;
+        width: 100%;
+        border-bottom-left-radius: 0;
+    }
+
+    #meilleurParticipations header{
+        margin-top: 10%;
+        width: 85vw;
+        order: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #meilleurButeur{
+        background-image: url("../img/imageKlose.webp");
+        background-size: cover;
+    }
+
+    #meilleurButeur table, #vainqueurs table{
+        align-self: flex-start;
+        margin-left: 5vw;
+        width: 40vw;
+    }
+
+    #meilleurButeur tr td, #vainqueurs tr td{
+        font-size: 0.8em;
+    }
+
+    #meilleurButeur img, #vainqueurs img{
+        display: none;
+    }
+
+    #meilleurParticipations img{
+        width: 8vw;
+        height: auto;
+    }
+
+    #vainqueurs{
+        background-image: url("https://i.la-croix.com/1400x933/smart/2022/05/21/1201216252/Kylian-Mbappe-embrasse-Coupe-mondela-victoire-lequipe-France-finale-contre-Croatie-2018-Moscou_0.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
 }
 
 @media (max-width: 500px){
@@ -102,6 +147,20 @@
     
     #menu-hamburger{
         display: block;
+    }
+
+    .stats-container h2{
+        font-size: 1.3em;
+    }
+
+    .stats-container table{
+        min-width: 0;
+        width: 85%;
+        margin: 0;
+    }
+
+    #meilleurButeur tr td, #vainqueurs tr td, #meilleurParticipations tr td{
+        font-size: 0.5em;
     }
 
 

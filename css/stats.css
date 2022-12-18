@@ -5,7 +5,7 @@ main{
     display: flex;
     flex-direction: column;
     background-image: url(../img/statsBgImage.jpg);
-    min-height: 200vh;
+    min-height: 2160px;
 }
 
 table{
@@ -15,7 +15,6 @@ table{
 
 table tr{
     font-family: 'Oxygen';
-    padding: 0 10%;
     text-align: center;
 }
 
@@ -48,13 +47,12 @@ table tr:nth-child(even){
 }
 
 .stats-container:nth-child(odd){
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
+    border-radius: 0 0 50px 0;
 }
 
 .stats-container:nth-child(even){
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
+    border-radius: 0 0 0 50px;
+    align-self: flex-end;
 }
 
 .stats-container h2{
@@ -73,8 +71,8 @@ table tr:nth-child(even){
 
 header{
     display: grid;
-    max-width: 60%;
     padding-left: 5vw;
+    width: 50%;
     grid-template-columns: repeat(auto-fill, 200px);
 }
 
@@ -90,18 +88,6 @@ header{
     width: auto;
 }
 
-#meilleurButeur{
-    align-self: flex-end;
-}
-
 #NbParticipations{
-    min-width: 300px;
-}
-
-#buteurs{
-    min-width: 400px;
-}
-
-#cdm-remporte{
-    min-width: 550px;
+    width: 25vw;
 }
