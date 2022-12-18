@@ -8,9 +8,10 @@
     list-style-type: none;
 }
 
+/* ----------------------- Barre de Navigation ----------------------- */
+
 #logo{
     width: 55px;
-    margin: 0, 5%;
     margin-left: 7%;
     cursor: pointer;
     animation-delay: 2s;
@@ -75,8 +76,13 @@ nav li a:hover {
     background-color: #111;
 }
 
-nav ul:nth-child(){
-    background-color: blue;
+.annee-container h2{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: white;
+    font-size: 3em;
+    font-family: 'Alfa Slab One';
 }
 
 .annee-container{
@@ -100,7 +106,6 @@ nav ul:nth-child(){
     order: 2;
 }
 
-
 .annee-container p{
     color: white;
     font-weight: bolder;
@@ -110,14 +115,13 @@ nav ul:nth-child(){
     text-align: center;
     font-size: 1.3em;
     z-index: 1;
-    transition: all 0.3 ease-in-out;
     animation: animate 0.5s linear forwards;
 }
 
 
 .annee-container .highlight-image{
     cursor: pointer;
-    height: 45vh;
+    height: auto;
     width: 40vw;
     margin: 5vh;
     border-radius: 15%;
@@ -224,6 +228,7 @@ nav h1{
 table, td {
     border: 1px solid black;
 }
+
 thead, tfoot {
     background-color: black;
     color: white;

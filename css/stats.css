@@ -4,34 +4,15 @@
 main{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-image: url(https://images5.alphacoders.com/128/1288612.jpg);
-    position: relative;
+    background-image: url(../img/statsBgImage.jpg);
+    min-height: 200vh;
 }
 
 table{
     border-collapse: collapse;
-    width: 30vw;
-    margin-top: 20vh;
 }
 
-#NbParticipations{
-    width: 20vw;
-    align-self: flex-end;
-    margin-right: 5vw;
-}
 
-#meilleur-buteur{
-    width: 35vw;
-    margin-left: 5vw;
-
-}
-#nbcdm{
-    width: 40vw;
-    align-self:flex-end;
-    margin-right: 5vw;
-    margin-bottom: 2vw;
-}
 table tr{
     font-family: 'Oxygen';
     padding: 0 10%;
@@ -43,6 +24,7 @@ thead th{
     padding: 2vh 0;
     background-color: #0B132B;
     font-family: 'Alfa Slab One';
+    font-weight: 100;
 }
 
 table tr:nth-child(odd){
@@ -53,84 +35,73 @@ table tr:nth-child(even){
     background-color: #FFFFFF;
 }
 
-#meilleur-buteur td:nth-child(7){
-    font-weight: bold;
+
+.stats-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: #293149;
+    width: 95%;
+    margin-top: 20vh;
+    padding: 10vh 0;
 }
 
-#logobresil{
-    position: absolute;
-    z-index: 2;
-    width: 12vw;
-    margin-top: 5vw;
-    margin-left: 5vw;
+.stats-container:nth-child(odd){
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
 }
-#logoallemagne{
-    position: absolute;
-    z-index: 2;
-    width: 9vw;
-    margin-top: 6vw;
-    margin-left: 20vw;
+
+.stats-container:nth-child(even){
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
 }
-#logoitalie{
+
+.stats-container h2{
     position: absolute;
-    z-index: 2;
-    width: 6vw;
-    margin-top: 6vw;
-    margin-left: 35vw;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    padding: 1vh 0;
+    font-size: 2em;
+    background-color: #0B132B;
+    color: white;
+    font-family: 'Alfa Slab One';
+    font-weight: 100;
+
 }
-#logoargentine{
-    position: absolute;
-    z-index: 2;
-    width: 7vw;
-    margin-top: 7vw;
-    margin-left: 48vw;
+
+header{
+    display: grid;
+    max-width: 60%;
+    padding-left: 5vw;
+    grid-template-columns: repeat(auto-fill, 200px);
 }
-#logomexique{
-    position: absolute;
-    z-index: 2;
-    width: 7vw;
-    margin-top: 20vw;
-    margin-left: 7.5vw;
+
+
+
+#meilleurButeur img, #vainqueurs img{
+    height: 20vh;
+    width: auto;
 }
-#logofrance{
-    position: absolute;
-    z-index: 2;
-    width: 7vw;
-    margin-top: 18.3vw;
-    margin-left: 20.86vw;
+
+#meilleurParticipations img{
+    height: 100px;
+    width: auto;
 }
-#logoespagne{
-    position: absolute;
-    z-index: 2;
-    width: 6vw;
-    margin-top: 18.3vw;
-    margin-left: 34.89vw;
+
+#meilleurButeur{
+    align-self: flex-end;
 }
-#logoangleterre{
-    position: absolute;
-    z-index: 2;
-    width: 7vw;
-    margin-top: 17.8vw;
-    margin-left: 48vw;
+
+#NbParticipations{
+    min-width: 300px;
 }
-#klose{
-    position: absolute;
-    z-index: 2;
-    width: 10vw;
-    margin-top: 35vw;
-    margin-left: 52.47vw;
+
+#buteurs{
+    min-width: 400px;
 }
-#r9{
-    position: absolute;
-    z-index: 2;
-    width: 16.47vw;
-    margin-top: 35vw;
-    margin-left: 75.47vw;
-}
-#kyky{
-    position: absolute;
-    z-index: 2;
-    width: 20vw;
-    margin-top: 54.78vw;
-    margin-left: 16.57vw;
+
+#cdm-remporte{
+    min-width: 550px;
 }
