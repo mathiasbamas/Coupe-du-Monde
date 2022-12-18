@@ -2,90 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-/* ----------------------- Barre de Navigation ----------------------- */
-
-#logo{
-    width: 55px;
-    margin-left: 7%;
-    cursor: pointer;
-    animation-delay: 2s;
-    animation: 2s appear;
-}
-
-nav{
-    position: relative;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    background-color: #0B132B;
-    transition: height 1s;
-}
-
-nav ul {
-    display: flex;
-    width: 70vw;
-    justify-content:space-evenly;
-    list-style-type: none;
-    margin: auto auto;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav li {
-    text-align: center;
-    border: solid white 2px;
-    padding: 10px 30px;
-    margin: 0 3%;
-    position: relative;
-    font-family: 'Alfa Slab One', cursive;
-    z-index: 1;
-}
-
-nav ul li::after{
-  pointer-events: none;
-  content: "";
-  position:absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: width 0.3s;
-}
-
-nav li:hover:after{
-    width: 100%;
-}
-
-nav li a{
-    color:white;
-    text-align: center;
-}
-
-nav li a:hover {
-    background-color: #111;
-}
-
-nav h1{
-    color: white;
-    font-family: 'Alfa Slab One';
-    font-weight: 100;
-    letter-spacing: 0.05em;
-    width: 45%;
-    margin-left: 10px;
-}
-
-
-
-/* ----------------------- Page principale Acceuil ----------------------- */
-
 
 main{
     min-height: 100vh;
@@ -116,13 +32,12 @@ main{
 
 .annee-container p{
     color: white;
-    font-weight: bolder;
+    font-weight: 400;
     padding: 3%; 
     width: 30%;
     font-family: 'Oxygen';
     text-align: center;
     font-size: 1.3em;
-    z-index: 1;
 }
 
 
@@ -136,7 +51,6 @@ main{
     opacity: 90%;
     transition: transform 0.3s;
     z-index: 1;
-    flex-wrap: wrap;
 }
 
 .annee-container .highlight-image:hover{
@@ -185,78 +99,6 @@ main{
 .annee-container:nth-child(1){
     display: flex;
 }
-
-/* ----------------------- Menu deroulant ----------------------- */
-
-#menu-hamburger{
-    display: none;
-    position: absolute;
-    right: 7vw;
-    width: 40px;
-    height: 40px;
-    justify-self: flex-end;
-}
-
-#menu-hamburger span{
-    margin-top: 10px;
-    display: block;
-    background-color: white;
-    width: 100%;
-    height: 4px;
-}
-
-/* ----------------------- Menu deroulant ouvert ----------------------- */
-
-.menu-open{
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
-    z-index: 3;
-}
-
-.menu-open #menu-hamburger{
-    top: 5%;
-    animation: 3s appear;
-}
-
-.menu-open #menu-hamburger span{
-    transition: transform 0.75s  ;
-}
-.menu-open #menu-hamburger span:nth-child(1){
-    position: absolute;
-    top: 0;
-    transform: rotate(45deg);
-}
-
-.menu-open #menu-hamburger span:nth-child(2){
-    display: none;
-}
-
-.menu-open #menu-hamburger span:nth-child(3){
-    position: absolute;
-    top: 0;
-    transform: rotate(-45deg);
-}
-
-.menu-open img, .menu-open h1{
-    display: none;
-} 
-
-.menu-open ul {
-    flex-direction: column;
-}
-
-.menu-open ul li{
-    margin: 5vh auto 0 auto;
-    padding: 5vh 0;
-    width: 80%;
-    opacity: 100;
-    animation-delay: 2s;
-    animation: 2s appear;
-}
-
-
-
 
 
 

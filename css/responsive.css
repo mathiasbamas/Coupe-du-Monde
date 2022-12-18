@@ -60,6 +60,7 @@
 
     #bas-de-page{
         font-size: 0.7em;
+        flex-direction: column;
     }
 
     /* ------------- PAGE EQUIPE ------------- */

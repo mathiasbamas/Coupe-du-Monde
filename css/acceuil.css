@@ -52,9 +52,7 @@
     border-radius: 15%;
     border: 6px solid white;
     opacity: 90%;
-    transition: transform 0.3s;
     z-index: 1;
-    flex-wrap: wrap;
 }
 
 .annee-container .highlight-image:hover{
