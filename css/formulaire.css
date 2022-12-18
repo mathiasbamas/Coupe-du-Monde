@@ -33,6 +33,11 @@ main{
 
 #nom{
     margin-top: 7vh;
+    text-transform: uppercase;
+}
+
+#prenom{
+    text-transform: capitalize;
 }
 
 #avis{
