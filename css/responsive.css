@@ -89,7 +89,9 @@
         width: 100%;
     }
 
-
+    #previousTeam, #nextTeam{
+        top: 300px;
+    }
 
 
 }
