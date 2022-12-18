@@ -34,7 +34,8 @@
     }
     
     .annee-container p{
-        width: 85vw;
+        width: 80%;
+        padding: 0 10vw;
         order: 2;
     }
 
@@ -43,6 +44,22 @@
         left: 0;
         top: 2%;
         text-align: center;
+    }
+
+    #precedent, #suivant{
+        font-size: 1em;
+    }
+
+    #precedent{
+        left: 10vw;
+    }
+    
+    #suivant{
+        right: 10vw;
+    }
+
+    #bas-de-page{
+        font-size: 0.7em;
     }
 
     /* ------------- PAGE EQUIPE ------------- */
@@ -117,6 +134,15 @@
 
 
 @media (max-width: 500px){
+
+    #precedent, #suivant{
+        width: 75px;
+    }
+
+    #bas-de-page{
+        font-size: 0.5em;
+    }
+
 
     /* ------------- PAGE EQUIPE ------------- */
     

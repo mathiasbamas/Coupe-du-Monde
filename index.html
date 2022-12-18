@@ -2,7 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="World Cup Rewind retrace l'histoire de la coupe du monde de 1998 a 2022 avec des statistiques et records">
         <link rel="stylesheet" href="css/styles.css">
+        <link id="style" rel="stylesheet" href="css/acceuil.css">
         <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="icon" type="image/svg" href="img/logo.svg" />
@@ -82,6 +84,18 @@
                 <img src="img/flag/argentineDrapeau.webp" alt="arrière plan drapeau de l'argentine" class="background-flag"> 
                 <p>La Coupe du Monde de football 2022 a eu lieue au Qatar, elle est la coupe du monde avec le plus d'argent investit (200 millions d'euros) et a été riche en rebondissement avec notament le parcours du Maroc et l'élimination de l'Allemagne en poules. Finalement l'Argentine l'emporte au tir aux buts en finale contre la France</p>
             </section>
+            <footer>
+                <input type="button" value="SUIVANT" id="suivant" onclick="changePageAcceuil(1)">
+                <input type="button" value="PRECEDENT" id="precedent" onclick="changePageAcceuil(-1)">
+            </footer>
         </main>
+
+        <footer id="bas-de-page">
+            <p>Site crée par BAMAS Mathias et BIHI Ayoub</p>
+            <section class="bouton-change-theme">
+                <input type="button" value="Theme 1" onclick="changeAcceuilStyle('css/acceuil.css')">
+                <input type="button" value="Theme 2" onclick="changeAcceuilStyle('css/acceuilSlider.css')">
+            </section>
+        </footer>
     </body>
 </html>

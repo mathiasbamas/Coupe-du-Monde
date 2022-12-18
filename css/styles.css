@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 *{
     margin: 0;
@@ -81,89 +82,6 @@ nav h1{
     margin-left: 10px;
 }
 
-
-
-/* ----------------------- Page principale Acceuil ----------------------- */
-
-#liste-annee{
-    max-width: 100vw;
-}
-
-.annee-container h2{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    color: white;
-    font-size: 3em;
-    font-family: 'Alfa Slab One';
-}
-
-.annee-container{
-    display: flex;
-    width: 100%;
-    padding: 10vh 0;
-    justify-content: space-evenly;
-    position: relative;
-    align-items: center;
-}
-
-.annee-container:nth-child(even){
-    background-image: url(https://img.freepik.com/vecteurs-premium/coupe-du-monde-football-contexte-pour-banniere-championnat-football-2022-au-qatar_29865-3055.jpg);
-}
-
-.annee-container:nth-child(odd){
-    background-image: url(https://thumbs.dreamstime.com/b/papier-peint-du-football-de-coupe-monde-102245519.jpg);
-}
-
-.annee-container:nth-child(even) img{
-    order: 2;
-}
-
-.annee-container p{
-    color: white;
-    font-weight: bolder;
-    padding: 3%; 
-    width: 30%;
-    font-family: 'Oxygen';
-    text-align: center;
-    font-size: 1.3em;
-    z-index: 1;
-}
-
-
-.annee-container .highlight-image{
-    cursor: pointer;
-    height: auto;
-    width: 40vw;
-    margin: 5vh;
-    border-radius: 15%;
-    border: 6px solid white;
-    opacity: 90%;
-    transition: transform 0.3s;
-    z-index: 1;
-    flex-wrap: wrap;
-}
-
-.annee-container .highlight-image:hover{
-    transform: scale(0.9);
-}
-
-.annee-container .background-flag{
-    position: absolute;
-    z-index: 0;
-    align-items: center;
-    height: 100%;
-    width: 100vw;
-    right: 0;
-    opacity: 0;
-    transition: opacity 1s;
-    object-fit: cover;
-}
-
-.highlight-image:hover ~ .background-flag{
-    opacity: 100%;
-}
-
 /* ----------------------- Menu deroulant ----------------------- */
 
 #menu-hamburger{
@@ -233,6 +151,31 @@ nav h1{
     animation: 2s appear;
 }
 
+#bas-de-page{
+    display: flex;
+    height: 200px;
+    background-color: #0B132B;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bas-de-page p{
+    font-family: 'Secular One';
+    font-size: 1.5em;
+    color: white;
+    height: fit-content;
+    width: 40%;
+}
+
+
+#bas-de-page input{
+    cursor: pointer;
+    min-width: 80px;
+    width: 150px;
+    min-height: 20px;
+    margin:  0 1vw;
+    font-family: 'Secular One';
+}
 
 
 

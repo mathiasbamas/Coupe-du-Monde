@@ -88,3 +88,27 @@ function fermerFenetre(){
     var fenetre = document.getElementById("validation-popup");
     fenetre.style.display = "none";
 }
+
+var pageAcceuil = 0;
+
+function changePageAcceuil(page){
+    var listePage = document.getElementsByClassName("annee-container")
+    if(pageAcceuil+page < 0 || pageAcceuil+page > listePage.length-1) return
+    listePage[pageAcceuil].style.display = "none"
+    pageAcceuil += page
+    listePage[pageAcceuil].style.display = "flex"
+
+    if(page > 0)
+    {
+        listePage[pageAcceuil].style.animation="0.5s slideFromLeft";
+    }
+    else
+    {
+        listePage[pageAcceuil].style.animation="0.5s slideFromRight";
+    }
+}
+
+function changeAcceuilStyle(nom){
+    document.getElementById('style').setAttribute('href', nom)
+}
+
