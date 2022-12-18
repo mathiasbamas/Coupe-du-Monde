@@ -12,6 +12,9 @@
     <title>Les Statistiques de la Coupe Du Monde</title>
 </head>
 <body>
+
+    <!-- Barre de navigation  --> 
+
     <nav id="navbar" class="menu-close">
         <img src="img/logo.svg" alt="logo" id="logo">
         <h1>WORLD CUP REWIND</h1>
@@ -21,6 +24,7 @@
             <li><a href="equipes.html">Equipes</a></li>
             <li><a href="formulaire.html">Formulaire</a></li>
         </ul>
+        <!-- Menu depliant Mobile  --> 
         <div id="menu-hamburger" onclick="afficheMenuDeroulant()">
             <span></span>
             <span></span>
@@ -28,223 +32,233 @@
         </div>
     </nav>
     <main>
-    <section id="meilleurParticipations" class="stats-container">
-        <h2>Participations totales</h2>
-        <header>
-            <img src="img/logoEquipes/logoBresil.webp" alt="logo-brésil" id="logobresil">
-            <img src="img/logoEquipes/logoAllemagne.webp" alt="logo-allemagne" id="logoallemagne">
-            <img src="img/logoEquipes/logoItalie.webp" alt="logo-italie" id="logoitalie">
-            <img src="img/logoEquipes/logoArgentine.webp" alt="logo-argentine" id="logoargentine">
-            <img src="img/logoEquipes/logoMexique.webp" alt="logo-méxique" id="logomexique">
-            <img src="img/logoEquipes/logoFrance.webp" alt="logo-france" id="logofrance">
-            <img src="img/logoEquipes/logoEspagne.webp" alt="logo-espagne" id="logoespagne">
-            <img src="img/logoEquipes/logoAngleterre.webp" alt="logo-angleterre" id="logoangleterre">
-        </header>
-        <table id="NbParticipations">
-            <thead>
-                <tr>
-                    <th colspan="2">Total de participations</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Pays</td>
-                    <td>Participations</td>
-                </tr>
-                <tr>
-                    <td>Brésil</td>
-                    <td>22</td>
-                </tr>
-                <tr>
-                    <td>Allemagne</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Italie</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Argentine</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Méxique</td>
-                    <td>17</td>
-                </tr>
-                <tr>
-                    <td>France</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>Espagne</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>Angleterre</td>
-                    <td>16</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section id="meilleurButeur" class="stats-container">
-        <h2>Meilleurs Buteurs</h2>
-        <table id="buteurs">
-            <thead>
-                <tr>
-                    <th colspan="5">Meilleurs Buteurs</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Classement</td>
-                    <td>Pays</td>
-                    <td>Nom</td>
-                    <td>Matchs</td>
-                    <td>Buts</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Allemagne</td>
-                    <td>Miroslav Klose</td>
-                    <td>24</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Brésil</td>
-                    <td>Ronaldo</td>
-                    <td>19</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Allemagne</td>
-                    <td>Gerd Muller</td>
-                    <td>13</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>France</td>
-                    <td>Just Fontaine</td>
-                    <td>6</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Argentine</td>
-                    <td>Lionel Messi</td>
-                    <td>25</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>France</td>
-                    <td>Mbappe</td>
-                    <td>14</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Brésil</td>
-                    <td>Pelé</td>
-                    <td>14</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Hongrie</td>
-                    <td>Sándor Kocsis</td>
-                    <td>5</td>
-                    <td>11</td>
-                </tr>     
-            </tbody>
-        </table>
-        <img src="https://assets-fr.imgfoot.com/miroslav-klose-1920-5eb123f99d895.jpg" alt="Miroslav" id="klose">
-    </section>
-    <section class="stats-container" id="vainqueurs">
-        <h2>Gagnants</h2>
-        <table id="cdm-remporte">
-            <thead>
-                <tr>
-                    <th colspan="5">Coupes du Monde remportées</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Classement</td>
-                    <td>Pays</td>
-                    <td>Remportées</td>
-                    <td>Finales</td>
-                    <td>Années</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Brésil</td>
-                    <td>5</td>
-                    <td>7</td>
-                    <td>1958, 1962, 1970, 1994, 2002</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Allemagne</td>
-                    <td>4</td>
-                    <td>8</td>
-                    <td>1954, 1974, 1990, 2014</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Italie</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>1934, 1938, 1982, 2006</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Argentine</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>1978, 1986, 2022</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>France</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>1998, 2018</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Uruguay</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1930, 1950</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Espagne</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2010</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Angleterre</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1966</td>
-                </tr>
-            </tbody>
-        </table>
-        <img src="https://i.la-croix.com/1400x933/smart/2022/05/21/1201216252/Kylian-Mbappe-embrasse-Coupe-mondela-victoire-lequipe-France-finale-contre-Croatie-2018-Moscou_0.jpg" alt="mbappe" id="kyky">
-    </section>
+
+        <!-- Meilleures participations-->
+
+        <section id="meilleurParticipations" class="stats-container">
+            <h2>Participations totales</h2>
+            <header>
+                <img src="img/logoEquipes/logoBresil.webp" alt="logo-brésil" id="logobresil">
+                <img src="img/logoEquipes/logoAllemagne.webp" alt="logo-allemagne" id="logoallemagne">
+                <img src="img/logoEquipes/logoItalie.webp" alt="logo-italie" id="logoitalie">
+                <img src="img/logoEquipes/logoArgentine.webp" alt="logo-argentine" id="logoargentine">
+                <img src="img/logoEquipes/logoMexique.webp" alt="logo-méxique" id="logomexique">
+                <img src="img/logoEquipes/logoFrance.webp" alt="logo-france" id="logofrance">
+                <img src="img/logoEquipes/logoEspagne.webp" alt="logo-espagne" id="logoespagne">
+                <img src="img/logoEquipes/logoAngleterre.webp" alt="logo-angleterre" id="logoangleterre">
+            </header>
+            <table id="NbParticipations">
+                <thead>
+                    <tr>
+                        <th colspan="2">Total de participations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pays</td>
+                        <td>Participations</td>
+                    </tr>
+                    <tr>
+                        <td>Brésil</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Allemagne</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Italie</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Argentine</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Méxique</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>France</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Espagne</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Angleterre</td>
+                        <td>16</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Meilleur buteurs-->
+
+        <section id="meilleurButeur" class="stats-container">
+            <h2>Meilleurs Buteurs</h2>
+            <table id="buteurs">
+                <thead>
+                    <tr>
+                        <th colspan="5">Meilleurs Buteurs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Classement</td>
+                        <td>Pays</td>
+                        <td>Nom</td>
+                        <td>Matchs</td>
+                        <td>Buts</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Allemagne</td>
+                        <td>Miroslav Klose</td>
+                        <td>24</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Brésil</td>
+                        <td>Ronaldo</td>
+                        <td>19</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Allemagne</td>
+                        <td>Gerd Muller</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>France</td>
+                        <td>Just Fontaine</td>
+                        <td>6</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Argentine</td>
+                        <td>Lionel Messi</td>
+                        <td>25</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>France</td>
+                        <td>Mbappe</td>
+                        <td>14</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Brésil</td>
+                        <td>Pelé</td>
+                        <td>14</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Hongrie</td>
+                        <td>Sándor Kocsis</td>
+                        <td>5</td>
+                        <td>11</td>
+                    </tr>     
+                </tbody>
+            </table>
+            <img src="https://assets-fr.imgfoot.com/miroslav-klose-1920-5eb123f99d895.jpg" alt="Miroslav" id="klose">
+        </section>
+
+        <!-- Plus de victoire-->
+
+        <section class="stats-container" id="vainqueurs">
+            <h2>Gagnants</h2>
+            <table id="cdm-remporte">
+                <thead>
+                    <tr>
+                        <th colspan="5">Coupes du Monde remportées</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Classement</td>
+                        <td>Pays</td>
+                        <td>Remportées</td>
+                        <td>Finales</td>
+                        <td>Années</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Brésil</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>1958, 1962, 1970, 1994, 2002</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Allemagne</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>1954, 1974, 1990, 2014</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Italie</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>1934, 1938, 1982, 2006</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Argentine</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>1978, 1986, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>France</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>1998, 2018</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Uruguay</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1930, 1950</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Espagne</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2010</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Angleterre</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1966</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="https://i.la-croix.com/1400x933/smart/2022/05/21/1201216252/Kylian-Mbappe-embrasse-Coupe-mondela-victoire-lequipe-France-finale-contre-Croatie-2018-Moscou_0.jpg" alt="mbappe" id="kyky">
+        </section>
     
-    <a href="https://fr.wikipedia.org/wiki/Statistiques_et_records_de_la_Coupe_du_monde_de_football">Voir Plus</a>
-</main>
-<footer id="bas-de-page">
-    <p>Site crée par BAMAS Mathias et BIHI Ayoub</p>
-    <a href="#"><img src="img/upLogo.svg" id="remonter"></a>
-</footer>
+        <a href="https://fr.wikipedia.org/wiki/Statistiques_et_records_de_la_Coupe_du_monde_de_football">Voir Plus</a>
+    </main>
+
+    <footer id="bas-de-page">
+        <p>Site crée par BAMAS Mathias et BIHI Ayoub</p>
+        <a href="#"><img src="img/upLogo.svg" id="remonter"></a>
+    </footer>
 </body>
 
 </html>

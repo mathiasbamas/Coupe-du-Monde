@@ -7,6 +7,8 @@ body{
     position: relative;
 }
 
+/* Formulaire */
+
 form{
     display: flex;
     flex-direction: column;
@@ -64,6 +66,59 @@ form{
     cursor: pointer;
 }
 
+form h1{
+    color: white;
+    width: 100%;
+    padding: 3% 0;
+    background-color: #141e30;
+    text-align: center;
+    font-family: 'Alfa Slab One';
+    font-weight: 100;
+}
+
+form h2{
+    color: white;
+    width: 80%;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 3%;
+    padding: 1% 0;
+    border-radius: 10px;
+    background-color: #141e30;
+    font-family: 'Alfa Slab One';
+}
+
+/* Liste equipe pour choisir la préféré */
+
+
+form #listeEquipes label{
+    width: 20%;
+    height: 90%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+form #listeEquipes label img{
+    width: 100%;
+}
+
+form #listeEquipes{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+:checked + label{
+    transform: scale(1.2);
+}
+
+:checked + label img{
+    z-index: 1;
+}
+
+/* Pop-up validation */
+
 #validation-popup{
     position: absolute;
     top: 30%;
@@ -98,52 +153,4 @@ form{
     cursor: pointer;
 }
 
-form h1{
-    color: white;
-    width: 100%;
-    padding: 3% 0;
-    background-color: #141e30;
-    text-align: center;
-    font-family: 'Alfa Slab One';
-    font-weight: 100;
-}
-
-form h2{
-    color: white;
-    width: 80%;
-    text-align: center;
-    font-weight: 100;
-    margin-top: 3%;
-    padding: 1% 0;
-    border-radius: 10px;
-    background-color: #141e30;
-    font-family: 'Alfa Slab One';
-}
-
-
-form #listeEquipes label{
-    width: 20%;
-    height: 90%;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-form #listeEquipes label img{
-    width: 100%;
-}
-
-form #listeEquipes{
-    width: 100%;
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-:checked + label{
-    transform: scale(1.2);
-}
-
-:checked + label img{
-    z-index: 1;
-}
 

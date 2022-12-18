@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
-
+/* Feuille CSS alternatice sur la page d'acceuil (theme 2) */
 main{
     min-height: 100vh;
     background: linear-gradient(to right, #141e30, #243b55);
