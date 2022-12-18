@@ -66,4 +66,25 @@ function changePage(page){
     boutonSuivant.style.opacity="1"
     }
 }
+
+function envoyerUnEmail() {
+    var params = {
+        name: document.getElementById("nom").value + " " + document.getElementById("prenom"), 
+        email: document.getElementById("email").value, 
+        message: document.getElementsByName("avis").value,
+    }
+    emailjs.send("service_a2zj8rt","template_o2n887g",params);
+
+    document.getElementById("nom").value = ""
+    document.getElementById("prenom").value = ""
+    document.getElementById("email").value = ""
+    document.getElementById("avis").value = ""
+
+    var fenetre = document.getElementById("validation-popup");
+    fenetre.style.display = "flex";
+}
     
+function fermerFenetre(){
+    var fenetre = document.getElementById("validation-popup");
+    fenetre.style.display = "none";
+}

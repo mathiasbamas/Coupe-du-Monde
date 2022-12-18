@@ -38,6 +38,7 @@ nav ul {
 }
 
 nav li {
+    text-align: center;
     border: solid white 2px;
     padding: 10px 30px;
     margin: 0 3%;

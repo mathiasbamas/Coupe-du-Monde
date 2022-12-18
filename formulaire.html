@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="css/formulaire.css">
     <link rel="icon" type="image/svg" href="img/logo.svg" />
     <script src="js/script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+    <script type="text/javascript"> (function(){
+      emailjs.init("ckAgtivinuMU7WtQz");
+    })();
+    </script>
+
     <title>Formulaire</title>
 </head>
 <body>
@@ -29,9 +34,9 @@
     </nav> 
     <main>
         <h1>Donnez nous votre Avis</h1>
-        <input type="text" placeholder="Nom" id="nom">
-        <input type="text" placeholder="Prenom" id="prenom">
-        <input type="email" placeholder="Email" id="email">
+        <input type="text" placeholder="Nom" id="nom" required>
+        <input type="text" placeholder="Prenom" id="prenom" required>
+        <input type="email" placeholder="Email" id="email" required>
         <textarea name="avis" id="avis" placeholder="Commentaire"></textarea>
         <h2>Quelle était votre équipe favorite ?</h2>
         <section id="listeEquipes">
@@ -47,7 +52,11 @@
             <input type="radio" name="pays" hidden id="pays4">
             <label for="pays4"><img src="img/flag/drapeauMarocIcon.png" alt=""></label>
         </section>
-        <input type="submit" value="Envoyer" id="envoyer">
+        <input type="submit" value="Envoyer" id="envoyer" onclick="envoyerUnEmail()">
+        <div id="validation-popup">
+            <p>Envoie Validé</p>
+            <input type="button" value="Fermer" onclick="fermerFenetre()">
+        </div> 
     </main>
 </body>
 </html>
