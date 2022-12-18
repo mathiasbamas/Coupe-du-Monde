@@ -9,7 +9,6 @@ main{
     position: relative;
 }
 
-
 .equipe-container{
     background-color: rgb(230, 230, 230);
     width: 55vw;
@@ -18,57 +17,52 @@ main{
     margin-top: 10vh;
     flex-direction: column;
     display: none;
-    animation: none;
 }
 
 .equipe-container h1{
-    width: fit-content;
-    height: fit-content;
-    padding: 10px 20px;
+    margin-left: 10%;
+    color: white;
     font-family: 'Alfa Slab One';
     font-weight: 100;
-    margin-left: 10%;
     font-size: 3em;
-    border-radius: 20px;
     color: white;
-    z-index: 1;
 }
 
 .equipe-container ul{
-    margin-top: 17vh;
+    margin-top: 10vh;
     margin-left: 10%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     padding-bottom: 10vh;
 }
 
 .equipe-container ul li{
     color: #0B132B;
-    font-family: 'Alfa Slab One';
-    font-size: 1.75em;
+    font-family: 'Secular One';
+    font-size: 2em;
 }
 
 .equipe-container header{
-    background-color: #0B132B;
-    align-items: center;
     display: flex;
-    padding: 5vh 0;
     width: 100%;
+    align-items: center;
+    padding: 5vh 0;
     justify-content: space-around;
-
+    background-color: #0B132B;
 }
 
 .equipe-container .flag{
     height: 100px;
     width: 160px;
     background-image: url("../img/SpriteDrapeauPays.png");
-    background-position: 0 0;
 }
 
 #equipeFrance{
-    display: flex;
+    display: block;
 }
+
+/* -------------- Bouton Suivant et Precedents -------------- */
 
 main input{
     position: absolute;

@@ -1,60 +1,69 @@
+/* Fonction permettant d'ouvrir et fermer le menu sur mobile
+   la navbar a la classe "menu-open" quand elle et ouverte et "menu-close" quand elle est fermée"
+*/ 
+
 function afficheMenuDeroulant(){
-    var x = document.getElementsByTagName("nav")[0]
-    if(x.className === "menu-close"){
-        x.className = "menu-open"
+    var navbar = document.getElementsByTagName("nav")[0]
+    if(navbar.className === "menu-close"){
+        navbar.className = "menu-open"
         document.getElementsByTagName("body")[0].style.overflow="hidden"
     }
     else{
-        x.className = "menu-close";
+        navbar.className = "menu-close";
         document.getElementsByTagName("body")[0].style.overflow="visible"
     }
 }
 
-var i = 0;
+var numPageEquipe = 0; /* Numero de la page dans le fenetre equipe */
 
-function nextTeam(){
-    var x = document.getElementsByClassName("equipe-container")
-    x[i].style.display="none";
-    if(i < x.length - 1){
-        ++i
+/* Fonction qui permet de changer de page 
+   -1 -> page precedente
+   1 -> page suivante 
+*/
+
+function changePage(page){
+    var container = document.getElementsByClassName("equipe-container")
+    if(numPageEquipe+page >= 0 && numPageEquipe+page < container.length) /* Si on ne sort pas des limites on change de page */
+    {
+        container[numPageEquipe].style.display="none";
+        numPageEquipe += page;
     }
-    var x = document.getElementsByClassName("equipe-container")
+
+    /* Changement de drapeau avec un sprite (160px par drapeau) */
     var flag = document.getElementsByClassName("flag");
-    flag[i].style.backgroundPosition = -i*160 + "px 0"
-    x[i].style.animation="0.5s slideFromLeft";
-    x[i].style.display="flex";
+    flag[numPageEquipe].style.backgroundPosition = -numPageEquipe*160 + "px 0"
+    container[numPageEquipe].style.display="block";
 
 
-    if(i === x.length - 1){
-        var boutonSuivant = document.getElementById("nextTeam")
+    /* Transition vers la droite ou la gauche  */
+    if(page > 0)
+    {
+        container[numPageEquipe].style.animation="0.5s slideFromLeft";
+    }
+    else
+    {
+        container[numPageEquipe].style.animation="0.5s slideFromRight";
+    }
+    var boutonPrecedent = document.getElementById("previousTeam");
+    var boutonSuivant = document.getElementById("nextTeam");
+
+
+    /* Si on atteint une extrémité -> bouton grisé */
+    if(numPageEquipe === 0){
+        boutonPrecedent.style.backgroundColor="gray"
+        boutonPrecedent.style.opacity="0.2"
+    }else{
+        boutonPrecedent.style.backgroundColor="#c5c73b"
+        boutonPrecedent.style.opacity="1"
+    }
+
+    if(numPageEquipe === container.length - 1)
+    {
         boutonSuivant.style.backgroundColor="gray"
         boutonSuivant.style.opacity="0.2"
-    }
-    var boutonPrecedent = document.getElementById("previousTeam")
-    boutonPrecedent.style.backgroundColor="#c5c73b"
-    boutonPrecedent.style.opacity="1"
-}
-
-function previousTeam(){
-    if(i > 0){
-        var x = document.getElementsByClassName("equipe-container")
-    x[i].style.display="none";
-    --i
-    var x = document.getElementsByClassName("equipe-container")
-    x[i].style.animation="0.5s slideFromRight";
-    x[i].style.display="flex";
-    var flag = document.getElementsByClassName("flag");
-    flag[i].style.backgroundPosition = -i*160 + "px 0"
-    }
-
-    if(i === 0){
-        var boutonSuivant = document.getElementById("previousTeam")
-        boutonSuivant.style.backgroundColor="gray"
-        boutonSuivant.style.opacity="0.2"
-    }
-    var boutonSuivant = document.getElementById("nextTeam")
-    boutonSuivant.style.backgroundColor="#c5c73b"
+    }else{
+        boutonSuivant.style.backgroundColor="#c5c73b"
     boutonSuivant.style.opacity="1"
-
+    }
 }
     

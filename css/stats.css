@@ -8,32 +8,12 @@ main{
     min-height: 2160px;
 }
 
-table{
-    border-collapse: collapse;
+header{
+    display: grid;
+    padding-left: 5vw;
+    width: 50%;
+    grid-template-columns: repeat(auto-fill, 200px);
 }
-
-
-table tr{
-    font-family: 'Oxygen';
-    text-align: center;
-}
-
-thead th{
-    color: white;
-    padding: 2vh 0;
-    background-color: #0B132B;
-    font-family: 'Alfa Slab One';
-    font-weight: 100;
-}
-
-table tr:nth-child(odd){
-    background-color: #B0B2B8;
-}
-
-table tr:nth-child(even){
-    background-color: #FFFFFF;
-}
-
 
 .stats-container{
     display: flex;
@@ -46,13 +26,25 @@ table tr:nth-child(even){
     padding: 10vh 0;
 }
 
-.stats-container:nth-child(odd){
-    border-radius: 0 0 50px 0;
+.stats-container table{
+    border-collapse: collapse;
 }
 
-.stats-container:nth-child(even){
-    border-radius: 0 0 0 50px;
-    align-self: flex-end;
+.stats-container table td{
+    border: 1px solid black;
+}
+
+.stats-container table tr{
+    font-family: 'Oxygen';
+    text-align: center;
+}
+
+.stats-container thead th{
+    color: white;
+    padding: 2vh 0;
+    background-color: #0B132B;
+    font-family: 'Alfa Slab One';
+    font-weight: 100;
 }
 
 .stats-container h2{
@@ -66,17 +58,24 @@ table tr:nth-child(even){
     color: white;
     font-family: 'Alfa Slab One';
     font-weight: 100;
-
 }
 
-header{
-    display: grid;
-    padding-left: 5vw;
-    width: 50%;
-    grid-template-columns: repeat(auto-fill, 200px);
+.stats-container table tr:nth-child(odd){
+    background-color: #B0B2B8;
 }
 
+.stats-container table tr:nth-child(even){
+    background-color: #FFFFFF;
+}
 
+.stats-container:nth-child(odd){
+    border-radius: 0 0 50px 0;
+}
+
+.stats-container:nth-child(even){
+    border-radius: 0 0 0 50px;
+    align-self: flex-end;
+}
 
 #meilleurButeur img, #vainqueurs img{
     height: 20vh;
