@@ -29,7 +29,6 @@ main{
     font-weight: 100;
     margin-left: 10%;
     font-size: 3em;
-    background-color: #0B132B;
     border-radius: 20px;
     color: white;
     z-index: 1;
@@ -51,11 +50,13 @@ main{
 }
 
 .equipe-container header{
+    background-color: #0B132B;
     align-items: center;
-    justify-content: space-around;
     display: flex;
-    padding-top: 5vh;
+    padding: 5vh 0;
     width: 100%;
+    justify-content: space-around;
+
 }
 
 .equipe-container .flag{

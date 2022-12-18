@@ -54,16 +54,8 @@
     }
 }
 
-@media (max-width: 400px){
-
-    nav h1{
-        display: none;
-    }
+@media (max-width: 500px){
     
-    #menu-hamburger{
-        display: block;
-    }
-
     .equipe-container header{
         flex-direction: column;
         align-items: center;
@@ -90,7 +82,19 @@
     }
 
     #previousTeam, #nextTeam{
-        top: 300px;
+        top: 330px;
+    }
+
+}
+
+@media (max-width: 400px){
+
+    nav h1{
+        display: none;
+    }
+    
+    #menu-hamburger{
+        display: block;
     }
 
 
